@@ -28,6 +28,9 @@ server.listen(serverPort, function(){
   if (process.env.LOCAL) {
     open('https://localhost:' + serverPort)
   }
+  else {
+    open('http://localhost:' + serverPort)
+  }
 });
 
 function socketIdsInRoom(name) {
